@@ -25,7 +25,7 @@ jobs:
         - javadoc-with-doclet # test javadoc generation with doclet
     steps:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-    - uses: actions/setup-java@v4
+    - uses: actions/setup-java@v5
       with:
         distribution: zulu
         java-version: ${{matrix.java}}
@@ -46,7 +46,7 @@ jobs:
         - lint  # fmt-maven-plugin and google-java-format
     steps:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-    - uses: actions/setup-java@v4
+    - uses: actions/setup-java@v5
       with:
         distribution: zulu
         java-version: ${{matrix.java}}
@@ -75,7 +75,7 @@ jobs:
         - java-bigquerystorage
     steps:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-    - uses: actions/setup-java@v4
+    - uses: actions/setup-java@v5
       with:
         distribution: temurin
         java-version: 17
